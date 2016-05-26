@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<widget appId="holdlady" channelCode="0000" height="480" pid="" sreensize="4.5" version="00.01.0000" viewmode="application" widgetId="" width="320">
+	
+	<name>HoldLady</name>
+	<description/>
+	<author email=""> </author>
+	<icon src="icon.png"/>
+	<license href=""/>
+	<content encoding="utf-8" src="index.html"/>
+	<updateurl>http://www.holdlady.com/app-update.php</updateurl>
+	<logserverip>192.168.1.110</logserverip> 
+	<showmyspace>false</showmyspace>
+	<obfuscation>true</obfuscation>
+	<bgcolor>#fefefe</bgcolor>
+	<orientation>15</orientation>
+<debug>true</debug>
+<partobfuscation/>
+<webapp>true</webapp>
+</widget>

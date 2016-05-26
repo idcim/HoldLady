@@ -1,0 +1,58 @@
+.newstianjia{
+	background-image:url('myImg/tianjia.png');
+}
+.t-btn-hf1{
+	background-image:url('myImg/xuanzhong1.png');
+}
+input[type="radio"]:checked + div.fontcolor {
+	color:#218dd5;
+	border-bottom: 1px solid #218dd5;
+}
+input[type=radio]+div.fontcolor {
+	color:#a1a1a1;
+	border-bottom: 1px solid #f1f1f1;
+}
+.uinn-hnfn2{
+	padding:0.78em 0;
+}
+.uw-hnfn1{
+	width:2.2em;
+}
+.us-hnfn {
+	-webkit-box-shadow:inset 1px 0 20px rgba(0, 0, 0, .3);
+	box-shadow:inset  1px 0 20px rgba(0, 0, 0, .3)
+}
+.tp-news{
+	background-image: url(myImg/f-btn-img2.png);
+}
+.f-btn-act .tp-news{
+	background-image: url(myImg/f-btn-img2-act.png);
+}
+.tp-mito{
+	background-image: url(myImg/f-btn-img3.png);
+}
+.f-btn-act .tp-mito{
+	background-image: url(myImg/f-btn-img3-act.png);
+}
+ .tp-subs{
+	background-image: url(myImg/f-btn9.png);
+}
+.f-btn-act .tp-subs{
+	background-image: url(myImg/f-btn9-act.png);
+}
+.tp-video{
+	background-image: url(myImg/f-btn10.png);
+}
+.f-btn-act .tp-video{
+	background-image: url(myImg/f-btn10-act.png);
+}
+.act-col{
+	color:#000;
+}
+.f-btn-act .act-col{
+	color:#ef6413;
+}
+.uwh-tBtn{
+    width: 1.75em;
+    height: 1.75em;
+}

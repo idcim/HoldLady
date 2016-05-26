@@ -1,0 +1,25 @@
+.newsnext{
+	background-image:url('myImg/next.png');
+}
+input[type="radio"]:checked + div.fontcolor {
+	color:#218dd5;
+	border-bottom: 1px solid #218dd5;
+}
+input[type=radio]+div.fontcolor {
+	color:#a1a1a1;
+	border-bottom: 1px solid transparent;
+	margin-bottom:-1px;
+}
+.b-gra-a1{
+	border-color:#a1a1a1;
+}
+.uwh-pL{
+	width:0.25em;
+	height:0.5em;
+}
+.uinn-pL1{
+	padding:0.75em 0;
+}
+.uinn-pL2{
+	padding:0.75em 0.625em;
+}

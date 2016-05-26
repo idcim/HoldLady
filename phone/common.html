@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" href="css/fonts/font-awesome.min.css">
+        <link rel="stylesheet" href="css/ui-box.css">
+        <link rel="stylesheet" href="css/ui-base.css">
+        <link rel="stylesheet" href="css/ui-color.css">
+        <link rel="stylesheet" href="css/appcan.icon.css">
+        <link rel="stylesheet" href="css/appcan.control.css">
+        <link rel="stylesheet" href="news_comment/css/main.css">
+    </head>
+    <body class="um-vp" ontouchstart>
+        <div class="ub ub-fv ub-fh urel" onclick="closepop()" style="background-color:rgba(0, 0, 0, 0.5)">
+
+        </div>
+        <div class="ub ub-ver ub-fh bc-bg" style="bottom: 0;left: 0;position: absolute;">
+            <div class="ub ub-ac c-wh">
+                <div class="umw3 ub ub-ac ub-pc uinn" ontouchstart="appcan.touch('')" onclick="closepop()">
+                    <div class="ub-img quxiao umw1 umh1"></div>
+                </div>
+                <div class=" tx-c t-bla ub-f1">
+                    写评论
+                </div>
+                <div class="umw3 ub ub-ac ub-pc uinn" ontouchstart="appcan.touch('')" >
+                    <div class="ub-img queding  umw1 umh1"></div>
+                </div>
+            </div>
+            <div class="uba bc-border uinput ub ub-f1">
+                <textarea placeholder="" type="text" class="ub ub-f1" id="common_area"></textarea>
+            </div>
+        </div>
+        <script src="js/appcan.js"></script>
+        <script src="js/appcan.control.js"></script>
+    </body>
+    <script>
+        appcan.ready(function() {
+        })
+        function closepop() {
+            appcan.execScriptInWin('news_comment', 'closepop()');
+        }
+    </script>
+</html>

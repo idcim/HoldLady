@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="css/ui-base.css">
+    <link rel="stylesheet" href="css/ui-box.css">
+    <link rel="stylesheet" href="css/ui-color.css">
+    <link rel="stylesheet" href="news_photoList_content/css/main.css">
+</head>
+<body class="ub um-vp c-wh2 ub-ver" ontouchstart>
+	<div class="uinn-npic1" id="picList">
+	</div>
+		
+			
+<script src="js/appcan.js"></script>
+<script src="js/appcan.control.js"></script>
+</body>
+<script>
+appcan.ready(function(){
+	appcan.initBounce();
+	picList();
+})
+function picList(){
+	var arrData = [{
+		"newsImg":"\'news_photoList_content/css/myImg/huoban.png\'",
+		"imgTit":"它的小伙伴们",
+		"commentNum":"24",
+		"imgNum":"4"
+	}, {
+		"newsImg":"\'news_photoList_content/css/myImg/lvse.png\'",
+		"imgTit":"绿色生活",
+		"commentNum":"90",
+		"imgNum":"14"
+	}];
+	var tmpl = '<%for(var i=0,len=arrData.length;i<len;i++){%><div class="uinn-npic2" ontouchstart="appcan.touch(\'\')" onclick="appcan.openWinWithUrl(\'news_photoDetail\',\'news_photoDetail.html\');">'
+				+'	<div class="uba bc-border c-wh">'
+				+'		<div class="ub-img7 ub-fh uh-npic1" style="background-image:url(${arrData[i].newsImg});"></div>'
+				+'		<div class="ub uinn">'
+				+'			<div class="ulev-4 ub-f1">${arrData[i].imgTit}</div>'
+				+'			<div class="ub ub-pe">'
+				+'				<div class="ub ub-ac umar-npic3">'
+				+'					<div class="ub-img newscommon umw1 umh1 umar-npic1"></div>'
+				+'					<div class="t-gra-9c ulev-2">${arrData[i].commentNum}</div>'
+				+'				</div>'
+				+'				<div class="ub ub-ac">'
+				+'					<div class="ub-img newsunknown umw1 umh1 umar-npic1"></div>'
+				+'					<div class="t-gra-9c ulev-2">${arrData[i].imgNum}</div>'
+				+'				</div>'
+				+'			</div>'
+				+'		</div>'
+				+'	</div>'
+				+'</div><%}%>'
+	appcan.tmplAppend("#picList",tmpl, {"arrData":arrData});
+
+}
+
+
+
+</script>
+</html>
